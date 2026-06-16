@@ -1,0 +1,2372 @@
+﻿<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="5/30/2026 2:00:30 AM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="DESKTOP-TJLQR67"
+  DTS:CreatorName="DESKTOP-TJLQR67\Admin"
+  DTS:DTSID="{0EE17A58-036C-4074-AE69-98901CE20151}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="17.0.1016.0"
+  DTS:LocaleID="1033"
+  DTS:ObjectName="ODS"
+  DTS:PackageType="5"
+  DTS:VersionBuild="10"
+  DTS:VersionGUID="{C8FDAF4E-4095-4FAA-B2DB-FD4E58771960}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Flat File Connection Manager]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{E373C41F-8145-419E-A9AC-33D37460C267}"
+      DTS:ObjectName="Flat File Connection Manager">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1033"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="65001"
+          DTS:ConnectionString="D:\VS code\ETL Packages\Airline Loyality Project\Data\Customer Flight Activity.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Loyalty Number"
+              DTS:DTSID="{6BCEFA1B-ADB1-45CA-BE1E-26DEDFF65B43}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Year"
+              DTS:DTSID="{EB738441-9AAD-4E4F-83B0-734FF62D4010}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Month"
+              DTS:DTSID="{91758788-A57F-4924-8465-249BD50ED192}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Total Flights"
+              DTS:DTSID="{F04AFF79-3200-4924-A1DC-8F9B182353AA}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Distance"
+              DTS:DTSID="{F91B8B5B-80FF-460E-9DF9-71F64EDC6471}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Points Accumulated"
+              DTS:DTSID="{42249C90-0531-4B34-BC80-DBD71E8E12AC}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Points Redeemed"
+              DTS:DTSID="{6E67C2FB-1EB7-4705-BBD0-D9AC4B08E5B2}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Dollar Cost Points Redeemed"
+              DTS:DTSID="{12D7E3AC-3A13-4F92-9472-4D0046D1CC93}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Flat File Connection Manager 1]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{960F7E78-C427-48CE-93AF-C5A2AD259F4B}"
+      DTS:ObjectName="Flat File Connection Manager 1">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1033"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="65001"
+          DTS:ConnectionString="D:\VS code\ETL Packages\Airline Loyality Project\Data\Customer Loyalty History.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Loyalty Number"
+              DTS:DTSID="{0CAF6FDA-4C3A-4289-8B2A-18D6EF1ABA5B}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Country"
+              DTS:DTSID="{FAB6526F-BC2C-4D93-A667-D4B9FFD8EF9E}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Province"
+              DTS:DTSID="{BB1EBF2C-CA32-4A5F-A5E5-B3A66254829E}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="City"
+              DTS:DTSID="{6C61FA24-07D2-40FF-88A9-030A1865D37F}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Postal Code"
+              DTS:DTSID="{9F46ED15-EDD9-4F33-A7A7-4CF362544AF0}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Gender"
+              DTS:DTSID="{A81998E9-0315-4B5E-8F8D-C1A20DFEB5A9}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Education"
+              DTS:DTSID="{A6F92C87-4499-4567-86B7-F36B02B17234}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="131"
+              DTS:DataPrecision="18"
+              DTS:DataScale="2"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Salary"
+              DTS:DTSID="{8F37FA3D-28D4-496D-BC8B-FB30154A2943}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Marital Status"
+              DTS:DTSID="{0418EBAA-E994-4F5E-B12E-FAC51816761F}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Loyalty Card"
+              DTS:DTSID="{133F12C3-8CE0-4569-BBF8-CE07A003AE22}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CLV"
+              DTS:DTSID="{44A8F708-D138-4B3E-A95A-9A5A1C160AE0}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Enrollment Type"
+              DTS:DTSID="{88E1AD07-3B2A-42BF-88F0-96DDF24FAC54}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Enrollment Year"
+              DTS:DTSID="{4B33964D-3100-458B-AFDB-D2ED24EAE5E0}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Enrollment Month"
+              DTS:DTSID="{C9C4E73A-7684-4858-B073-C81339F0BFAA}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Cancellation Year"
+              DTS:DTSID="{34A099FC-9502-468A-97A3-AE39E3AB8482}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Cancellation Month"
+              DTS:DTSID="{78679683-6C25-4EE7-B191-E62D37621898}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Flat File Connection Manager 2]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{0B55F4F0-626E-4DC7-9A9A-B846CEC99BE3}"
+      DTS:ObjectName="Flat File Connection Manager 2">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1033"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="D:\VS code\ETL Packages\Airline Loyality Project\Data\Calendar.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Date"
+              DTS:DTSID="{74F292AD-0AB2-4D7B-88F4-64E118410570}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Start of Year"
+              DTS:DTSID="{817D7421-1666-4277-BBC4-DA4DB110846B}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Start of Quarter"
+              DTS:DTSID="{B5B03B26-C3F5-4B55-BB71-11965BC9E51C}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Start of Month"
+              DTS:DTSID="{E226B130-0C0A-402B-80CA-B3A4BE30348C}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Execute SQL Task"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{1622EFC9-67F8-4525-96BC-14DC343EE5F4}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Execute SQL Task"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2025; © 2025 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{685C04AA-8F0C-4650-9153-AD3A4A061DBC}"
+          SQLTask:SqlStatementSource="TRUNCATE TABLE customer_flight_activity&#xA;GO&#xA;TRUNCATE TABLE customer_loyalty_history&#xA;GO&#xA;TRUNCATE TABLE calendar&#xA;GO" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Extract Data"
+      DTS:CreationName="STOCK:SEQUENCE"
+      DTS:Description="Sequence Container"
+      DTS:DTSID="{69FF0542-19EE-4E79-A223-C1669607EE25}"
+      DTS:ExecutableType="STOCK:SEQUENCE"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Extract Data">
+      <DTS:Variables />
+      <DTS:Executables>
+        <DTS:Executable
+          DTS:refId="Package\Extract Data\Calendar"
+          DTS:CreationName="Microsoft.Pipeline"
+          DTS:Description="Data Flow Task"
+          DTS:DTSID="{C97738F8-B2D5-4BF1-8825-14F9F6FDBF93}"
+          DTS:ExecutableType="Microsoft.Pipeline"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="Calendar"
+          DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <pipeline
+              version="1">
+              <components>
+                <component
+                  refId="Package\Extract Data\Calendar\Flat File Source"
+                  componentClassID="Microsoft.FlatFileSource"
+                  contactInfo="Flat File Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+                  description="Flat File Source"
+                  localeId="1033"
+                  name="Flat File Source"
+                  usesDispositions="true"
+                  version="1">
+                  <properties>
+                    <property
+                      dataType="System.Boolean"
+                      description="Specifies whether zero-length columns are treated as null."
+                      name="RetainNulls">false</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the name of an output column containing the file name. If no name is specified, no output column containing the file name will be generated."
+                      name="FileNameColumnName"></property>
+                  </properties>
+                  <connections>
+                    <connection
+                      refId="Package\Extract Data\Calendar\Flat File Source.Connections[FlatFileConnection]"
+                      connectionManagerID="Package.ConnectionManagers[Flat File Connection Manager 2]"
+                      connectionManagerRefId="Package.ConnectionManagers[Flat File Connection Manager 2]"
+                      name="FlatFileConnection" />
+                  </connections>
+                  <outputs>
+                    <output
+                      refId="Package\Extract Data\Calendar\Flat File Source.Outputs[Flat File Source Output]"
+                      name="Flat File Source Output">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Extract Data\Calendar\Flat File Source.Outputs[Flat File Source Output].Columns[Date]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Extract Data\Calendar\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Date]"
+                          length="50"
+                          lineageId="Package\Extract Data\Calendar\Flat File Source.Outputs[Flat File Source Output].Columns[Date]"
+                          name="Date"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Extract Data\Calendar\Flat File Source.Outputs[Flat File Source Output].Columns[Start of Year]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Extract Data\Calendar\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Start of Year]"
+                          length="50"
+                          lineageId="Package\Extract Data\Calendar\Flat File Source.Outputs[Flat File Source Output].Columns[Start of Year]"
+                          name="Start of Year"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Extract Data\Calendar\Flat File Source.Outputs[Flat File Source Output].Columns[Start of Quarter]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Extract Data\Calendar\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Start of Quarter]"
+                          length="50"
+                          lineageId="Package\Extract Data\Calendar\Flat File Source.Outputs[Flat File Source Output].Columns[Start of Quarter]"
+                          name="Start of Quarter"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Extract Data\Calendar\Flat File Source.Outputs[Flat File Source Output].Columns[Start of Month]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Extract Data\Calendar\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Start of Month]"
+                          length="50"
+                          lineageId="Package\Extract Data\Calendar\Flat File Source.Outputs[Flat File Source Output].Columns[Start of Month]"
+                          name="Start of Month"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                      </outputColumns>
+                      <externalMetadataColumns
+                        isUsed="True">
+                        <externalMetadataColumn
+                          refId="Package\Extract Data\Calendar\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Date]"
+                          dataType="wstr"
+                          length="50"
+                          name="Date" />
+                        <externalMetadataColumn
+                          refId="Package\Extract Data\Calendar\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Start of Year]"
+                          dataType="wstr"
+                          length="50"
+                          name="Start of Year" />
+                        <externalMetadataColumn
+                          refId="Package\Extract Data\Calendar\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Start of Quarter]"
+                          dataType="wstr"
+                          length="50"
+                          name="Start of Quarter" />
+                        <externalMetadataColumn
+                          refId="Package\Extract Data\Calendar\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Start of Month]"
+                          dataType="wstr"
+                          length="50"
+                          name="Start of Month" />
+                      </externalMetadataColumns>
+                    </output>
+                    <output
+                      refId="Package\Extract Data\Calendar\Flat File Source.Outputs[Flat File Source Error Output]"
+                      isErrorOut="true"
+                      name="Flat File Source Error Output">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Extract Data\Calendar\Flat File Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                          codePage="1252"
+                          dataType="text"
+                          description="Flat File Source Error Output Column"
+                          lineageId="Package\Extract Data\Calendar\Flat File Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                          name="Flat File Source Error Output Column" />
+                        <outputColumn
+                          refId="Package\Extract Data\Calendar\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\Extract Data\Calendar\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\Extract Data\Calendar\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\Extract Data\Calendar\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+                <component
+                  refId="Package\Extract Data\Calendar\OLE DB Destination"
+                  componentClassID="Microsoft.OLEDBDestination"
+                  contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+                  description="OLE DB Destination"
+                  name="OLE DB Destination"
+                  usesDispositions="true"
+                  version="4">
+                  <properties>
+                    <property
+                      dataType="System.Int32"
+                      description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                      name="CommandTimeout">0</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the name of the database object used to open a rowset."
+                      name="OpenRowset">[dbo].[calendar]</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the variable that contains the name of the database object used to open a rowset."
+                      name="OpenRowsetVariable"></property>
+                    <property
+                      dataType="System.String"
+                      description="The SQL command to be executed."
+                      name="SqlCommand"
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the column code page to use when code page information is unavailable from the data source."
+                      name="DefaultCodePage">1252</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Forces the use of the DefaultCodePage property value when describing character data."
+                      name="AlwaysUseDefaultCodePage">false</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the mode used to access the database."
+                      name="AccessMode"
+                      typeConverter="AccessMode">3</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                      name="FastLoadKeepIdentity">false</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                      name="FastLoadKeepNulls">false</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                      name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                      name="FastLoadMaxInsertCommitSize">2147483647</property>
+                  </properties>
+                  <connections>
+                    <connection
+                      refId="Package\Extract Data\Calendar\OLE DB Destination.Connections[OleDbConnection]"
+                      connectionManagerID="{685C04AA-8F0C-4650-9153-AD3A4A061DBC}:external"
+                      connectionManagerRefId="Project.ConnectionManagers[__SQLEXPRESS.Airline_ODS]"
+                      description="The OLE DB runtime connection used to access the database."
+                      name="OleDbConnection" />
+                  </connections>
+                  <inputs>
+                    <input
+                      refId="Package\Extract Data\Calendar\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                      errorOrTruncationOperation="Insert"
+                      errorRowDisposition="FailComponent"
+                      hasSideEffects="true"
+                      name="OLE DB Destination Input">
+                      <inputColumns>
+                        <inputColumn
+                          refId="Package\Extract Data\Calendar\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Date]"
+                          cachedDataType="wstr"
+                          cachedLength="50"
+                          cachedName="Date"
+                          externalMetadataColumnId="Package\Extract Data\Calendar\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[date]"
+                          lineageId="Package\Extract Data\Calendar\Flat File Source.Outputs[Flat File Source Output].Columns[Date]" />
+                        <inputColumn
+                          refId="Package\Extract Data\Calendar\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Start of Year]"
+                          cachedDataType="wstr"
+                          cachedLength="50"
+                          cachedName="Start of Year"
+                          externalMetadataColumnId="Package\Extract Data\Calendar\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[start_of_year]"
+                          lineageId="Package\Extract Data\Calendar\Flat File Source.Outputs[Flat File Source Output].Columns[Start of Year]" />
+                        <inputColumn
+                          refId="Package\Extract Data\Calendar\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Start of Quarter]"
+                          cachedDataType="wstr"
+                          cachedLength="50"
+                          cachedName="Start of Quarter"
+                          externalMetadataColumnId="Package\Extract Data\Calendar\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[start_of_quarter]"
+                          lineageId="Package\Extract Data\Calendar\Flat File Source.Outputs[Flat File Source Output].Columns[Start of Quarter]" />
+                        <inputColumn
+                          refId="Package\Extract Data\Calendar\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Start of Month]"
+                          cachedDataType="wstr"
+                          cachedLength="50"
+                          cachedName="Start of Month"
+                          externalMetadataColumnId="Package\Extract Data\Calendar\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[start_of_month]"
+                          lineageId="Package\Extract Data\Calendar\Flat File Source.Outputs[Flat File Source Output].Columns[Start of Month]" />
+                      </inputColumns>
+                      <externalMetadataColumns
+                        isUsed="True">
+                        <externalMetadataColumn
+                          refId="Package\Extract Data\Calendar\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[date]"
+                          dataType="wstr"
+                          length="50"
+                          name="date" />
+                        <externalMetadataColumn
+                          refId="Package\Extract Data\Calendar\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[start_of_year]"
+                          dataType="wstr"
+                          length="50"
+                          name="start_of_year" />
+                        <externalMetadataColumn
+                          refId="Package\Extract Data\Calendar\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[start_of_quarter]"
+                          dataType="wstr"
+                          length="50"
+                          name="start_of_quarter" />
+                        <externalMetadataColumn
+                          refId="Package\Extract Data\Calendar\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[start_of_month]"
+                          dataType="wstr"
+                          length="50"
+                          name="start_of_month" />
+                      </externalMetadataColumns>
+                    </input>
+                  </inputs>
+                  <outputs>
+                    <output
+                      refId="Package\Extract Data\Calendar\OLE DB Destination.Outputs[OLE DB Destination Error Output]"
+                      exclusionGroup="1"
+                      isErrorOut="true"
+                      name="OLE DB Destination Error Output"
+                      synchronousInputId="Package\Extract Data\Calendar\OLE DB Destination.Inputs[OLE DB Destination Input]">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Extract Data\Calendar\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\Extract Data\Calendar\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\Extract Data\Calendar\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\Extract Data\Calendar\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+              </components>
+              <paths>
+                <path
+                  refId="Package\Extract Data\Calendar.Paths[Flat File Source Output]"
+                  endId="Package\Extract Data\Calendar\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                  name="Flat File Source Output"
+                  startId="Package\Extract Data\Calendar\Flat File Source.Outputs[Flat File Source Output]" />
+              </paths>
+            </pipeline>
+          </DTS:ObjectData>
+        </DTS:Executable>
+        <DTS:Executable
+          DTS:refId="Package\Extract Data\Customer Flights Activity"
+          DTS:CreationName="Microsoft.Pipeline"
+          DTS:Description="Data Flow Task"
+          DTS:DTSID="{642EC1D0-5A08-4851-A433-42161E116A61}"
+          DTS:ExecutableType="Microsoft.Pipeline"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="Customer Flights Activity"
+          DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <pipeline
+              version="1">
+              <components>
+                <component
+                  refId="Package\Extract Data\Customer Flights Activity\Flat File Source"
+                  componentClassID="Microsoft.FlatFileSource"
+                  contactInfo="Flat File Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+                  description="Flat File Source"
+                  localeId="1033"
+                  name="Flat File Source"
+                  usesDispositions="true"
+                  version="1">
+                  <properties>
+                    <property
+                      dataType="System.Boolean"
+                      description="Specifies whether zero-length columns are treated as null."
+                      name="RetainNulls">false</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the name of an output column containing the file name. If no name is specified, no output column containing the file name will be generated."
+                      name="FileNameColumnName"></property>
+                  </properties>
+                  <connections>
+                    <connection
+                      refId="Package\Extract Data\Customer Flights Activity\Flat File Source.Connections[FlatFileConnection]"
+                      connectionManagerID="Package.ConnectionManagers[Flat File Connection Manager]"
+                      connectionManagerRefId="Package.ConnectionManagers[Flat File Connection Manager]"
+                      name="FlatFileConnection" />
+                  </connections>
+                  <outputs>
+                    <output
+                      refId="Package\Extract Data\Customer Flights Activity\Flat File Source.Outputs[Flat File Source Output]"
+                      name="Flat File Source Output">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Extract Data\Customer Flights Activity\Flat File Source.Outputs[Flat File Source Output].Columns[Loyalty Number]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Extract Data\Customer Flights Activity\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Loyalty Number]"
+                          length="50"
+                          lineageId="Package\Extract Data\Customer Flights Activity\Flat File Source.Outputs[Flat File Source Output].Columns[Loyalty Number]"
+                          name="Loyalty Number"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Extract Data\Customer Flights Activity\Flat File Source.Outputs[Flat File Source Output].Columns[Year]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Extract Data\Customer Flights Activity\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Year]"
+                          length="50"
+                          lineageId="Package\Extract Data\Customer Flights Activity\Flat File Source.Outputs[Flat File Source Output].Columns[Year]"
+                          name="Year"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Extract Data\Customer Flights Activity\Flat File Source.Outputs[Flat File Source Output].Columns[Month]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Extract Data\Customer Flights Activity\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Month]"
+                          length="50"
+                          lineageId="Package\Extract Data\Customer Flights Activity\Flat File Source.Outputs[Flat File Source Output].Columns[Month]"
+                          name="Month"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Extract Data\Customer Flights Activity\Flat File Source.Outputs[Flat File Source Output].Columns[Total Flights]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Extract Data\Customer Flights Activity\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Total Flights]"
+                          length="50"
+                          lineageId="Package\Extract Data\Customer Flights Activity\Flat File Source.Outputs[Flat File Source Output].Columns[Total Flights]"
+                          name="Total Flights"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Extract Data\Customer Flights Activity\Flat File Source.Outputs[Flat File Source Output].Columns[Distance]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Extract Data\Customer Flights Activity\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Distance]"
+                          length="50"
+                          lineageId="Package\Extract Data\Customer Flights Activity\Flat File Source.Outputs[Flat File Source Output].Columns[Distance]"
+                          name="Distance"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Extract Data\Customer Flights Activity\Flat File Source.Outputs[Flat File Source Output].Columns[Points Accumulated]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Extract Data\Customer Flights Activity\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Points Accumulated]"
+                          length="50"
+                          lineageId="Package\Extract Data\Customer Flights Activity\Flat File Source.Outputs[Flat File Source Output].Columns[Points Accumulated]"
+                          name="Points Accumulated"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Extract Data\Customer Flights Activity\Flat File Source.Outputs[Flat File Source Output].Columns[Points Redeemed]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Extract Data\Customer Flights Activity\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Points Redeemed]"
+                          length="50"
+                          lineageId="Package\Extract Data\Customer Flights Activity\Flat File Source.Outputs[Flat File Source Output].Columns[Points Redeemed]"
+                          name="Points Redeemed"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Extract Data\Customer Flights Activity\Flat File Source.Outputs[Flat File Source Output].Columns[Dollar Cost Points Redeemed]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Extract Data\Customer Flights Activity\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Dollar Cost Points Redeemed]"
+                          length="50"
+                          lineageId="Package\Extract Data\Customer Flights Activity\Flat File Source.Outputs[Flat File Source Output].Columns[Dollar Cost Points Redeemed]"
+                          name="Dollar Cost Points Redeemed"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                      </outputColumns>
+                      <externalMetadataColumns
+                        isUsed="True">
+                        <externalMetadataColumn
+                          refId="Package\Extract Data\Customer Flights Activity\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Loyalty Number]"
+                          dataType="wstr"
+                          length="50"
+                          name="Loyalty Number" />
+                        <externalMetadataColumn
+                          refId="Package\Extract Data\Customer Flights Activity\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Year]"
+                          dataType="wstr"
+                          length="50"
+                          name="Year" />
+                        <externalMetadataColumn
+                          refId="Package\Extract Data\Customer Flights Activity\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Month]"
+                          dataType="wstr"
+                          length="50"
+                          name="Month" />
+                        <externalMetadataColumn
+                          refId="Package\Extract Data\Customer Flights Activity\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Total Flights]"
+                          dataType="wstr"
+                          length="50"
+                          name="Total Flights" />
+                        <externalMetadataColumn
+                          refId="Package\Extract Data\Customer Flights Activity\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Distance]"
+                          dataType="wstr"
+                          length="50"
+                          name="Distance" />
+                        <externalMetadataColumn
+                          refId="Package\Extract Data\Customer Flights Activity\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Points Accumulated]"
+                          dataType="wstr"
+                          length="50"
+                          name="Points Accumulated" />
+                        <externalMetadataColumn
+                          refId="Package\Extract Data\Customer Flights Activity\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Points Redeemed]"
+                          dataType="wstr"
+                          length="50"
+                          name="Points Redeemed" />
+                        <externalMetadataColumn
+                          refId="Package\Extract Data\Customer Flights Activity\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Dollar Cost Points Redeemed]"
+                          dataType="wstr"
+                          length="50"
+                          name="Dollar Cost Points Redeemed" />
+                      </externalMetadataColumns>
+                    </output>
+                    <output
+                      refId="Package\Extract Data\Customer Flights Activity\Flat File Source.Outputs[Flat File Source Error Output]"
+                      isErrorOut="true"
+                      name="Flat File Source Error Output">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Extract Data\Customer Flights Activity\Flat File Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                          codePage="65001"
+                          dataType="text"
+                          description="Flat File Source Error Output Column"
+                          lineageId="Package\Extract Data\Customer Flights Activity\Flat File Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                          name="Flat File Source Error Output Column" />
+                        <outputColumn
+                          refId="Package\Extract Data\Customer Flights Activity\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\Extract Data\Customer Flights Activity\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\Extract Data\Customer Flights Activity\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\Extract Data\Customer Flights Activity\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+                <component
+                  refId="Package\Extract Data\Customer Flights Activity\OLE DB Destination"
+                  componentClassID="Microsoft.OLEDBDestination"
+                  contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+                  description="OLE DB Destination"
+                  name="OLE DB Destination"
+                  usesDispositions="true"
+                  version="4">
+                  <properties>
+                    <property
+                      dataType="System.Int32"
+                      description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                      name="CommandTimeout">0</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the name of the database object used to open a rowset."
+                      name="OpenRowset">[dbo].[customer_flight_activity]</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the variable that contains the name of the database object used to open a rowset."
+                      name="OpenRowsetVariable"></property>
+                    <property
+                      dataType="System.String"
+                      description="The SQL command to be executed."
+                      name="SqlCommand"
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the column code page to use when code page information is unavailable from the data source."
+                      name="DefaultCodePage">1252</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Forces the use of the DefaultCodePage property value when describing character data."
+                      name="AlwaysUseDefaultCodePage">false</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the mode used to access the database."
+                      name="AccessMode"
+                      typeConverter="AccessMode">3</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                      name="FastLoadKeepIdentity">false</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                      name="FastLoadKeepNulls">false</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                      name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                      name="FastLoadMaxInsertCommitSize">2147483647</property>
+                  </properties>
+                  <connections>
+                    <connection
+                      refId="Package\Extract Data\Customer Flights Activity\OLE DB Destination.Connections[OleDbConnection]"
+                      connectionManagerID="{685C04AA-8F0C-4650-9153-AD3A4A061DBC}:external"
+                      connectionManagerRefId="Project.ConnectionManagers[__SQLEXPRESS.Airline_ODS]"
+                      description="The OLE DB runtime connection used to access the database."
+                      name="OleDbConnection" />
+                  </connections>
+                  <inputs>
+                    <input
+                      refId="Package\Extract Data\Customer Flights Activity\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                      errorOrTruncationOperation="Insert"
+                      errorRowDisposition="FailComponent"
+                      hasSideEffects="true"
+                      name="OLE DB Destination Input">
+                      <inputColumns>
+                        <inputColumn
+                          refId="Package\Extract Data\Customer Flights Activity\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Year]"
+                          cachedDataType="wstr"
+                          cachedLength="50"
+                          cachedName="Year"
+                          externalMetadataColumnId="Package\Extract Data\Customer Flights Activity\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[year]"
+                          lineageId="Package\Extract Data\Customer Flights Activity\Flat File Source.Outputs[Flat File Source Output].Columns[Year]" />
+                        <inputColumn
+                          refId="Package\Extract Data\Customer Flights Activity\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Month]"
+                          cachedDataType="wstr"
+                          cachedLength="50"
+                          cachedName="Month"
+                          externalMetadataColumnId="Package\Extract Data\Customer Flights Activity\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[month]"
+                          lineageId="Package\Extract Data\Customer Flights Activity\Flat File Source.Outputs[Flat File Source Output].Columns[Month]" />
+                        <inputColumn
+                          refId="Package\Extract Data\Customer Flights Activity\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Distance]"
+                          cachedDataType="wstr"
+                          cachedLength="50"
+                          cachedName="Distance"
+                          externalMetadataColumnId="Package\Extract Data\Customer Flights Activity\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[distance]"
+                          lineageId="Package\Extract Data\Customer Flights Activity\Flat File Source.Outputs[Flat File Source Output].Columns[Distance]" />
+                        <inputColumn
+                          refId="Package\Extract Data\Customer Flights Activity\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Loyalty Number]"
+                          cachedDataType="wstr"
+                          cachedLength="50"
+                          cachedName="Loyalty Number"
+                          externalMetadataColumnId="Package\Extract Data\Customer Flights Activity\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[loyalty_number]"
+                          lineageId="Package\Extract Data\Customer Flights Activity\Flat File Source.Outputs[Flat File Source Output].Columns[Loyalty Number]" />
+                        <inputColumn
+                          refId="Package\Extract Data\Customer Flights Activity\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Total Flights]"
+                          cachedDataType="wstr"
+                          cachedLength="50"
+                          cachedName="Total Flights"
+                          externalMetadataColumnId="Package\Extract Data\Customer Flights Activity\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[total_flights]"
+                          lineageId="Package\Extract Data\Customer Flights Activity\Flat File Source.Outputs[Flat File Source Output].Columns[Total Flights]" />
+                        <inputColumn
+                          refId="Package\Extract Data\Customer Flights Activity\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Points Accumulated]"
+                          cachedDataType="wstr"
+                          cachedLength="50"
+                          cachedName="Points Accumulated"
+                          externalMetadataColumnId="Package\Extract Data\Customer Flights Activity\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[points_accumulated]"
+                          lineageId="Package\Extract Data\Customer Flights Activity\Flat File Source.Outputs[Flat File Source Output].Columns[Points Accumulated]" />
+                        <inputColumn
+                          refId="Package\Extract Data\Customer Flights Activity\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Points Redeemed]"
+                          cachedDataType="wstr"
+                          cachedLength="50"
+                          cachedName="Points Redeemed"
+                          externalMetadataColumnId="Package\Extract Data\Customer Flights Activity\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[points_redeemed]"
+                          lineageId="Package\Extract Data\Customer Flights Activity\Flat File Source.Outputs[Flat File Source Output].Columns[Points Redeemed]" />
+                        <inputColumn
+                          refId="Package\Extract Data\Customer Flights Activity\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Dollar Cost Points Redeemed]"
+                          cachedDataType="wstr"
+                          cachedLength="50"
+                          cachedName="Dollar Cost Points Redeemed"
+                          externalMetadataColumnId="Package\Extract Data\Customer Flights Activity\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[dollar_cost_points_redeemed]"
+                          lineageId="Package\Extract Data\Customer Flights Activity\Flat File Source.Outputs[Flat File Source Output].Columns[Dollar Cost Points Redeemed]" />
+                      </inputColumns>
+                      <externalMetadataColumns
+                        isUsed="True">
+                        <externalMetadataColumn
+                          refId="Package\Extract Data\Customer Flights Activity\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[loyalty_number]"
+                          dataType="wstr"
+                          length="50"
+                          name="loyalty_number" />
+                        <externalMetadataColumn
+                          refId="Package\Extract Data\Customer Flights Activity\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[year]"
+                          dataType="wstr"
+                          length="50"
+                          name="year" />
+                        <externalMetadataColumn
+                          refId="Package\Extract Data\Customer Flights Activity\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[month]"
+                          dataType="wstr"
+                          length="50"
+                          name="month" />
+                        <externalMetadataColumn
+                          refId="Package\Extract Data\Customer Flights Activity\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[total_flights]"
+                          dataType="wstr"
+                          length="50"
+                          name="total_flights" />
+                        <externalMetadataColumn
+                          refId="Package\Extract Data\Customer Flights Activity\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[distance]"
+                          dataType="wstr"
+                          length="50"
+                          name="distance" />
+                        <externalMetadataColumn
+                          refId="Package\Extract Data\Customer Flights Activity\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[points_accumulated]"
+                          dataType="wstr"
+                          length="50"
+                          name="points_accumulated" />
+                        <externalMetadataColumn
+                          refId="Package\Extract Data\Customer Flights Activity\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[points_redeemed]"
+                          dataType="wstr"
+                          length="50"
+                          name="points_redeemed" />
+                        <externalMetadataColumn
+                          refId="Package\Extract Data\Customer Flights Activity\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[dollar_cost_points_redeemed]"
+                          dataType="wstr"
+                          length="50"
+                          name="dollar_cost_points_redeemed" />
+                      </externalMetadataColumns>
+                    </input>
+                  </inputs>
+                  <outputs>
+                    <output
+                      refId="Package\Extract Data\Customer Flights Activity\OLE DB Destination.Outputs[OLE DB Destination Error Output]"
+                      exclusionGroup="1"
+                      isErrorOut="true"
+                      name="OLE DB Destination Error Output"
+                      synchronousInputId="Package\Extract Data\Customer Flights Activity\OLE DB Destination.Inputs[OLE DB Destination Input]">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Extract Data\Customer Flights Activity\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\Extract Data\Customer Flights Activity\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\Extract Data\Customer Flights Activity\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\Extract Data\Customer Flights Activity\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+              </components>
+              <paths>
+                <path
+                  refId="Package\Extract Data\Customer Flights Activity.Paths[Flat File Source Output]"
+                  endId="Package\Extract Data\Customer Flights Activity\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                  name="Flat File Source Output"
+                  startId="Package\Extract Data\Customer Flights Activity\Flat File Source.Outputs[Flat File Source Output]" />
+              </paths>
+            </pipeline>
+          </DTS:ObjectData>
+        </DTS:Executable>
+        <DTS:Executable
+          DTS:refId="Package\Extract Data\Customer Loyalty History"
+          DTS:CreationName="Microsoft.Pipeline"
+          DTS:Description="Data Flow Task"
+          DTS:DTSID="{6CA0EE56-8DA9-4DC5-B225-503A30FBACB5}"
+          DTS:ExecutableType="Microsoft.Pipeline"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="Customer Loyalty History"
+          DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <pipeline
+              version="1">
+              <components>
+                <component
+                  refId="Package\Extract Data\Customer Loyalty History\Flat File Source"
+                  componentClassID="Microsoft.FlatFileSource"
+                  contactInfo="Flat File Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+                  description="Flat File Source"
+                  localeId="1033"
+                  name="Flat File Source"
+                  usesDispositions="true"
+                  version="1">
+                  <properties>
+                    <property
+                      dataType="System.Boolean"
+                      description="Specifies whether zero-length columns are treated as null."
+                      name="RetainNulls">true</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the name of an output column containing the file name. If no name is specified, no output column containing the file name will be generated."
+                      name="FileNameColumnName"></property>
+                  </properties>
+                  <connections>
+                    <connection
+                      refId="Package\Extract Data\Customer Loyalty History\Flat File Source.Connections[FlatFileConnection]"
+                      connectionManagerID="Package.ConnectionManagers[Flat File Connection Manager 1]"
+                      connectionManagerRefId="Package.ConnectionManagers[Flat File Connection Manager 1]"
+                      name="FlatFileConnection" />
+                  </connections>
+                  <outputs>
+                    <output
+                      refId="Package\Extract Data\Customer Loyalty History\Flat File Source.Outputs[Flat File Source Output]"
+                      name="Flat File Source Output">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Extract Data\Customer Loyalty History\Flat File Source.Outputs[Flat File Source Output].Columns[Loyalty Number]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Extract Data\Customer Loyalty History\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Loyalty Number]"
+                          length="50"
+                          lineageId="Package\Extract Data\Customer Loyalty History\Flat File Source.Outputs[Flat File Source Output].Columns[Loyalty Number]"
+                          name="Loyalty Number"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Extract Data\Customer Loyalty History\Flat File Source.Outputs[Flat File Source Output].Columns[Country]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Extract Data\Customer Loyalty History\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Country]"
+                          length="50"
+                          lineageId="Package\Extract Data\Customer Loyalty History\Flat File Source.Outputs[Flat File Source Output].Columns[Country]"
+                          name="Country"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Extract Data\Customer Loyalty History\Flat File Source.Outputs[Flat File Source Output].Columns[Province]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Extract Data\Customer Loyalty History\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Province]"
+                          length="50"
+                          lineageId="Package\Extract Data\Customer Loyalty History\Flat File Source.Outputs[Flat File Source Output].Columns[Province]"
+                          name="Province"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Extract Data\Customer Loyalty History\Flat File Source.Outputs[Flat File Source Output].Columns[City]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Extract Data\Customer Loyalty History\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[City]"
+                          length="50"
+                          lineageId="Package\Extract Data\Customer Loyalty History\Flat File Source.Outputs[Flat File Source Output].Columns[City]"
+                          name="City"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Extract Data\Customer Loyalty History\Flat File Source.Outputs[Flat File Source Output].Columns[Postal Code]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Extract Data\Customer Loyalty History\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Postal Code]"
+                          length="50"
+                          lineageId="Package\Extract Data\Customer Loyalty History\Flat File Source.Outputs[Flat File Source Output].Columns[Postal Code]"
+                          name="Postal Code"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Extract Data\Customer Loyalty History\Flat File Source.Outputs[Flat File Source Output].Columns[Gender]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Extract Data\Customer Loyalty History\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Gender]"
+                          length="50"
+                          lineageId="Package\Extract Data\Customer Loyalty History\Flat File Source.Outputs[Flat File Source Output].Columns[Gender]"
+                          name="Gender"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Extract Data\Customer Loyalty History\Flat File Source.Outputs[Flat File Source Output].Columns[Education]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Extract Data\Customer Loyalty History\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Education]"
+                          length="50"
+                          lineageId="Package\Extract Data\Customer Loyalty History\Flat File Source.Outputs[Flat File Source Output].Columns[Education]"
+                          name="Education"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Extract Data\Customer Loyalty History\Flat File Source.Outputs[Flat File Source Output].Columns[Salary]"
+                          dataType="numeric"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Extract Data\Customer Loyalty History\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Salary]"
+                          lineageId="Package\Extract Data\Customer Loyalty History\Flat File Source.Outputs[Flat File Source Output].Columns[Salary]"
+                          name="Salary"
+                          precision="18"
+                          scale="2"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Extract Data\Customer Loyalty History\Flat File Source.Outputs[Flat File Source Output].Columns[Marital Status]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Extract Data\Customer Loyalty History\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Marital Status]"
+                          length="50"
+                          lineageId="Package\Extract Data\Customer Loyalty History\Flat File Source.Outputs[Flat File Source Output].Columns[Marital Status]"
+                          name="Marital Status"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Extract Data\Customer Loyalty History\Flat File Source.Outputs[Flat File Source Output].Columns[Loyalty Card]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Extract Data\Customer Loyalty History\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Loyalty Card]"
+                          length="50"
+                          lineageId="Package\Extract Data\Customer Loyalty History\Flat File Source.Outputs[Flat File Source Output].Columns[Loyalty Card]"
+                          name="Loyalty Card"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Extract Data\Customer Loyalty History\Flat File Source.Outputs[Flat File Source Output].Columns[CLV]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Extract Data\Customer Loyalty History\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[CLV]"
+                          length="50"
+                          lineageId="Package\Extract Data\Customer Loyalty History\Flat File Source.Outputs[Flat File Source Output].Columns[CLV]"
+                          name="CLV"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Extract Data\Customer Loyalty History\Flat File Source.Outputs[Flat File Source Output].Columns[Enrollment Type]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Extract Data\Customer Loyalty History\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Enrollment Type]"
+                          length="50"
+                          lineageId="Package\Extract Data\Customer Loyalty History\Flat File Source.Outputs[Flat File Source Output].Columns[Enrollment Type]"
+                          name="Enrollment Type"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Extract Data\Customer Loyalty History\Flat File Source.Outputs[Flat File Source Output].Columns[Enrollment Year]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Extract Data\Customer Loyalty History\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Enrollment Year]"
+                          length="50"
+                          lineageId="Package\Extract Data\Customer Loyalty History\Flat File Source.Outputs[Flat File Source Output].Columns[Enrollment Year]"
+                          name="Enrollment Year"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Extract Data\Customer Loyalty History\Flat File Source.Outputs[Flat File Source Output].Columns[Enrollment Month]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Extract Data\Customer Loyalty History\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Enrollment Month]"
+                          length="50"
+                          lineageId="Package\Extract Data\Customer Loyalty History\Flat File Source.Outputs[Flat File Source Output].Columns[Enrollment Month]"
+                          name="Enrollment Month"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Extract Data\Customer Loyalty History\Flat File Source.Outputs[Flat File Source Output].Columns[Cancellation Year]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Extract Data\Customer Loyalty History\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Cancellation Year]"
+                          length="50"
+                          lineageId="Package\Extract Data\Customer Loyalty History\Flat File Source.Outputs[Flat File Source Output].Columns[Cancellation Year]"
+                          name="Cancellation Year"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Extract Data\Customer Loyalty History\Flat File Source.Outputs[Flat File Source Output].Columns[Cancellation Month]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Extract Data\Customer Loyalty History\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Cancellation Month]"
+                          length="50"
+                          lineageId="Package\Extract Data\Customer Loyalty History\Flat File Source.Outputs[Flat File Source Output].Columns[Cancellation Month]"
+                          name="Cancellation Month"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                      </outputColumns>
+                      <externalMetadataColumns
+                        isUsed="True">
+                        <externalMetadataColumn
+                          refId="Package\Extract Data\Customer Loyalty History\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Loyalty Number]"
+                          dataType="wstr"
+                          length="50"
+                          name="Loyalty Number" />
+                        <externalMetadataColumn
+                          refId="Package\Extract Data\Customer Loyalty History\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Country]"
+                          dataType="wstr"
+                          length="50"
+                          name="Country" />
+                        <externalMetadataColumn
+                          refId="Package\Extract Data\Customer Loyalty History\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Province]"
+                          dataType="wstr"
+                          length="50"
+                          name="Province" />
+                        <externalMetadataColumn
+                          refId="Package\Extract Data\Customer Loyalty History\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[City]"
+                          dataType="wstr"
+                          length="50"
+                          name="City" />
+                        <externalMetadataColumn
+                          refId="Package\Extract Data\Customer Loyalty History\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Postal Code]"
+                          dataType="wstr"
+                          length="50"
+                          name="Postal Code" />
+                        <externalMetadataColumn
+                          refId="Package\Extract Data\Customer Loyalty History\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Gender]"
+                          dataType="wstr"
+                          length="50"
+                          name="Gender" />
+                        <externalMetadataColumn
+                          refId="Package\Extract Data\Customer Loyalty History\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Education]"
+                          dataType="wstr"
+                          length="50"
+                          name="Education" />
+                        <externalMetadataColumn
+                          refId="Package\Extract Data\Customer Loyalty History\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Salary]"
+                          dataType="numeric"
+                          name="Salary"
+                          precision="18"
+                          scale="2" />
+                        <externalMetadataColumn
+                          refId="Package\Extract Data\Customer Loyalty History\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Marital Status]"
+                          dataType="wstr"
+                          length="50"
+                          name="Marital Status" />
+                        <externalMetadataColumn
+                          refId="Package\Extract Data\Customer Loyalty History\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Loyalty Card]"
+                          dataType="wstr"
+                          length="50"
+                          name="Loyalty Card" />
+                        <externalMetadataColumn
+                          refId="Package\Extract Data\Customer Loyalty History\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[CLV]"
+                          dataType="wstr"
+                          length="50"
+                          name="CLV" />
+                        <externalMetadataColumn
+                          refId="Package\Extract Data\Customer Loyalty History\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Enrollment Type]"
+                          dataType="wstr"
+                          length="50"
+                          name="Enrollment Type" />
+                        <externalMetadataColumn
+                          refId="Package\Extract Data\Customer Loyalty History\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Enrollment Year]"
+                          dataType="wstr"
+                          length="50"
+                          name="Enrollment Year" />
+                        <externalMetadataColumn
+                          refId="Package\Extract Data\Customer Loyalty History\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Enrollment Month]"
+                          dataType="wstr"
+                          length="50"
+                          name="Enrollment Month" />
+                        <externalMetadataColumn
+                          refId="Package\Extract Data\Customer Loyalty History\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Cancellation Year]"
+                          dataType="wstr"
+                          length="50"
+                          name="Cancellation Year" />
+                        <externalMetadataColumn
+                          refId="Package\Extract Data\Customer Loyalty History\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Cancellation Month]"
+                          dataType="wstr"
+                          length="50"
+                          name="Cancellation Month" />
+                      </externalMetadataColumns>
+                    </output>
+                    <output
+                      refId="Package\Extract Data\Customer Loyalty History\Flat File Source.Outputs[Flat File Source Error Output]"
+                      isErrorOut="true"
+                      name="Flat File Source Error Output">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Extract Data\Customer Loyalty History\Flat File Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                          codePage="65001"
+                          dataType="text"
+                          description="Flat File Source Error Output Column"
+                          lineageId="Package\Extract Data\Customer Loyalty History\Flat File Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                          name="Flat File Source Error Output Column" />
+                        <outputColumn
+                          refId="Package\Extract Data\Customer Loyalty History\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\Extract Data\Customer Loyalty History\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\Extract Data\Customer Loyalty History\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\Extract Data\Customer Loyalty History\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+                <component
+                  refId="Package\Extract Data\Customer Loyalty History\OLE DB Destination"
+                  componentClassID="Microsoft.OLEDBDestination"
+                  contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+                  description="OLE DB Destination"
+                  name="OLE DB Destination"
+                  usesDispositions="true"
+                  version="4">
+                  <properties>
+                    <property
+                      dataType="System.Int32"
+                      description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                      name="CommandTimeout">0</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the name of the database object used to open a rowset."
+                      name="OpenRowset">[dbo].[customer_loyalty_history]</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the variable that contains the name of the database object used to open a rowset."
+                      name="OpenRowsetVariable"></property>
+                    <property
+                      dataType="System.String"
+                      description="The SQL command to be executed."
+                      name="SqlCommand"
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the column code page to use when code page information is unavailable from the data source."
+                      name="DefaultCodePage">1252</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Forces the use of the DefaultCodePage property value when describing character data."
+                      name="AlwaysUseDefaultCodePage">false</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the mode used to access the database."
+                      name="AccessMode"
+                      typeConverter="AccessMode">3</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                      name="FastLoadKeepIdentity">false</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                      name="FastLoadKeepNulls">false</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                      name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                      name="FastLoadMaxInsertCommitSize">2147483647</property>
+                  </properties>
+                  <connections>
+                    <connection
+                      refId="Package\Extract Data\Customer Loyalty History\OLE DB Destination.Connections[OleDbConnection]"
+                      connectionManagerID="{685C04AA-8F0C-4650-9153-AD3A4A061DBC}:external"
+                      connectionManagerRefId="Project.ConnectionManagers[__SQLEXPRESS.Airline_ODS]"
+                      description="The OLE DB runtime connection used to access the database."
+                      name="OleDbConnection" />
+                  </connections>
+                  <inputs>
+                    <input
+                      refId="Package\Extract Data\Customer Loyalty History\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                      errorOrTruncationOperation="Insert"
+                      errorRowDisposition="FailComponent"
+                      hasSideEffects="true"
+                      name="OLE DB Destination Input">
+                      <inputColumns>
+                        <inputColumn
+                          refId="Package\Extract Data\Customer Loyalty History\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Country]"
+                          cachedDataType="wstr"
+                          cachedLength="50"
+                          cachedName="Country"
+                          externalMetadataColumnId="Package\Extract Data\Customer Loyalty History\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[country]"
+                          lineageId="Package\Extract Data\Customer Loyalty History\Flat File Source.Outputs[Flat File Source Output].Columns[Country]" />
+                        <inputColumn
+                          refId="Package\Extract Data\Customer Loyalty History\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Province]"
+                          cachedDataType="wstr"
+                          cachedLength="50"
+                          cachedName="Province"
+                          externalMetadataColumnId="Package\Extract Data\Customer Loyalty History\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[province]"
+                          lineageId="Package\Extract Data\Customer Loyalty History\Flat File Source.Outputs[Flat File Source Output].Columns[Province]" />
+                        <inputColumn
+                          refId="Package\Extract Data\Customer Loyalty History\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[City]"
+                          cachedDataType="wstr"
+                          cachedLength="50"
+                          cachedName="City"
+                          externalMetadataColumnId="Package\Extract Data\Customer Loyalty History\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[city]"
+                          lineageId="Package\Extract Data\Customer Loyalty History\Flat File Source.Outputs[Flat File Source Output].Columns[City]" />
+                        <inputColumn
+                          refId="Package\Extract Data\Customer Loyalty History\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Gender]"
+                          cachedDataType="wstr"
+                          cachedLength="50"
+                          cachedName="Gender"
+                          externalMetadataColumnId="Package\Extract Data\Customer Loyalty History\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Gender]"
+                          lineageId="Package\Extract Data\Customer Loyalty History\Flat File Source.Outputs[Flat File Source Output].Columns[Gender]" />
+                        <inputColumn
+                          refId="Package\Extract Data\Customer Loyalty History\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Education]"
+                          cachedDataType="wstr"
+                          cachedLength="50"
+                          cachedName="Education"
+                          externalMetadataColumnId="Package\Extract Data\Customer Loyalty History\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[education]"
+                          lineageId="Package\Extract Data\Customer Loyalty History\Flat File Source.Outputs[Flat File Source Output].Columns[Education]" />
+                        <inputColumn
+                          refId="Package\Extract Data\Customer Loyalty History\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Salary]"
+                          cachedDataType="numeric"
+                          cachedName="Salary"
+                          cachedPrecision="18"
+                          cachedScale="2"
+                          externalMetadataColumnId="Package\Extract Data\Customer Loyalty History\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[salary]"
+                          lineageId="Package\Extract Data\Customer Loyalty History\Flat File Source.Outputs[Flat File Source Output].Columns[Salary]" />
+                        <inputColumn
+                          refId="Package\Extract Data\Customer Loyalty History\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[CLV]"
+                          cachedDataType="wstr"
+                          cachedLength="50"
+                          cachedName="CLV"
+                          externalMetadataColumnId="Package\Extract Data\Customer Loyalty History\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CLV]"
+                          lineageId="Package\Extract Data\Customer Loyalty History\Flat File Source.Outputs[Flat File Source Output].Columns[CLV]" />
+                        <inputColumn
+                          refId="Package\Extract Data\Customer Loyalty History\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Postal Code]"
+                          cachedDataType="wstr"
+                          cachedLength="50"
+                          cachedName="Postal Code"
+                          externalMetadataColumnId="Package\Extract Data\Customer Loyalty History\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[postal_code]"
+                          lineageId="Package\Extract Data\Customer Loyalty History\Flat File Source.Outputs[Flat File Source Output].Columns[Postal Code]" />
+                        <inputColumn
+                          refId="Package\Extract Data\Customer Loyalty History\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Loyalty Number]"
+                          cachedDataType="wstr"
+                          cachedLength="50"
+                          cachedName="Loyalty Number"
+                          externalMetadataColumnId="Package\Extract Data\Customer Loyalty History\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[loyalty_number]"
+                          lineageId="Package\Extract Data\Customer Loyalty History\Flat File Source.Outputs[Flat File Source Output].Columns[Loyalty Number]" />
+                        <inputColumn
+                          refId="Package\Extract Data\Customer Loyalty History\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Marital Status]"
+                          cachedDataType="wstr"
+                          cachedLength="50"
+                          cachedName="Marital Status"
+                          externalMetadataColumnId="Package\Extract Data\Customer Loyalty History\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[marital_status]"
+                          lineageId="Package\Extract Data\Customer Loyalty History\Flat File Source.Outputs[Flat File Source Output].Columns[Marital Status]" />
+                        <inputColumn
+                          refId="Package\Extract Data\Customer Loyalty History\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Loyalty Card]"
+                          cachedDataType="wstr"
+                          cachedLength="50"
+                          cachedName="Loyalty Card"
+                          externalMetadataColumnId="Package\Extract Data\Customer Loyalty History\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[loyalty_card]"
+                          lineageId="Package\Extract Data\Customer Loyalty History\Flat File Source.Outputs[Flat File Source Output].Columns[Loyalty Card]" />
+                        <inputColumn
+                          refId="Package\Extract Data\Customer Loyalty History\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Enrollment Type]"
+                          cachedDataType="wstr"
+                          cachedLength="50"
+                          cachedName="Enrollment Type"
+                          externalMetadataColumnId="Package\Extract Data\Customer Loyalty History\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[enrollment_type]"
+                          lineageId="Package\Extract Data\Customer Loyalty History\Flat File Source.Outputs[Flat File Source Output].Columns[Enrollment Type]" />
+                        <inputColumn
+                          refId="Package\Extract Data\Customer Loyalty History\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Enrollment Year]"
+                          cachedDataType="wstr"
+                          cachedLength="50"
+                          cachedName="Enrollment Year"
+                          externalMetadataColumnId="Package\Extract Data\Customer Loyalty History\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[enrollment_year]"
+                          lineageId="Package\Extract Data\Customer Loyalty History\Flat File Source.Outputs[Flat File Source Output].Columns[Enrollment Year]" />
+                        <inputColumn
+                          refId="Package\Extract Data\Customer Loyalty History\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Enrollment Month]"
+                          cachedDataType="wstr"
+                          cachedLength="50"
+                          cachedName="Enrollment Month"
+                          externalMetadataColumnId="Package\Extract Data\Customer Loyalty History\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[enrollment_month]"
+                          lineageId="Package\Extract Data\Customer Loyalty History\Flat File Source.Outputs[Flat File Source Output].Columns[Enrollment Month]" />
+                        <inputColumn
+                          refId="Package\Extract Data\Customer Loyalty History\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Cancellation Year]"
+                          cachedDataType="wstr"
+                          cachedLength="50"
+                          cachedName="Cancellation Year"
+                          externalMetadataColumnId="Package\Extract Data\Customer Loyalty History\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[cancellation_year]"
+                          lineageId="Package\Extract Data\Customer Loyalty History\Flat File Source.Outputs[Flat File Source Output].Columns[Cancellation Year]" />
+                        <inputColumn
+                          refId="Package\Extract Data\Customer Loyalty History\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Cancellation Month]"
+                          cachedDataType="wstr"
+                          cachedLength="50"
+                          cachedName="Cancellation Month"
+                          externalMetadataColumnId="Package\Extract Data\Customer Loyalty History\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[cancellation_month]"
+                          lineageId="Package\Extract Data\Customer Loyalty History\Flat File Source.Outputs[Flat File Source Output].Columns[Cancellation Month]" />
+                      </inputColumns>
+                      <externalMetadataColumns
+                        isUsed="True">
+                        <externalMetadataColumn
+                          refId="Package\Extract Data\Customer Loyalty History\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[loyalty_number]"
+                          dataType="wstr"
+                          length="50"
+                          name="loyalty_number" />
+                        <externalMetadataColumn
+                          refId="Package\Extract Data\Customer Loyalty History\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[country]"
+                          dataType="wstr"
+                          length="50"
+                          name="country" />
+                        <externalMetadataColumn
+                          refId="Package\Extract Data\Customer Loyalty History\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[province]"
+                          dataType="wstr"
+                          length="50"
+                          name="province" />
+                        <externalMetadataColumn
+                          refId="Package\Extract Data\Customer Loyalty History\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[city]"
+                          dataType="wstr"
+                          length="50"
+                          name="city" />
+                        <externalMetadataColumn
+                          refId="Package\Extract Data\Customer Loyalty History\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[postal_code]"
+                          dataType="wstr"
+                          length="50"
+                          name="postal_code" />
+                        <externalMetadataColumn
+                          refId="Package\Extract Data\Customer Loyalty History\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Gender]"
+                          dataType="wstr"
+                          length="50"
+                          name="Gender" />
+                        <externalMetadataColumn
+                          refId="Package\Extract Data\Customer Loyalty History\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[education]"
+                          dataType="wstr"
+                          length="50"
+                          name="education" />
+                        <externalMetadataColumn
+                          refId="Package\Extract Data\Customer Loyalty History\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[salary]"
+                          dataType="numeric"
+                          name="salary"
+                          precision="18"
+                          scale="2" />
+                        <externalMetadataColumn
+                          refId="Package\Extract Data\Customer Loyalty History\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[marital_status]"
+                          dataType="wstr"
+                          length="50"
+                          name="marital_status" />
+                        <externalMetadataColumn
+                          refId="Package\Extract Data\Customer Loyalty History\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[loyalty_card]"
+                          dataType="wstr"
+                          length="50"
+                          name="loyalty_card" />
+                        <externalMetadataColumn
+                          refId="Package\Extract Data\Customer Loyalty History\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CLV]"
+                          dataType="wstr"
+                          length="50"
+                          name="CLV" />
+                        <externalMetadataColumn
+                          refId="Package\Extract Data\Customer Loyalty History\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[enrollment_type]"
+                          dataType="wstr"
+                          length="50"
+                          name="enrollment_type" />
+                        <externalMetadataColumn
+                          refId="Package\Extract Data\Customer Loyalty History\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[enrollment_year]"
+                          dataType="wstr"
+                          length="50"
+                          name="enrollment_year" />
+                        <externalMetadataColumn
+                          refId="Package\Extract Data\Customer Loyalty History\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[enrollment_month]"
+                          dataType="wstr"
+                          length="50"
+                          name="enrollment_month" />
+                        <externalMetadataColumn
+                          refId="Package\Extract Data\Customer Loyalty History\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[cancellation_year]"
+                          dataType="wstr"
+                          length="50"
+                          name="cancellation_year" />
+                        <externalMetadataColumn
+                          refId="Package\Extract Data\Customer Loyalty History\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[cancellation_month]"
+                          dataType="wstr"
+                          length="50"
+                          name="cancellation_month" />
+                      </externalMetadataColumns>
+                    </input>
+                  </inputs>
+                  <outputs>
+                    <output
+                      refId="Package\Extract Data\Customer Loyalty History\OLE DB Destination.Outputs[OLE DB Destination Error Output]"
+                      exclusionGroup="1"
+                      isErrorOut="true"
+                      name="OLE DB Destination Error Output"
+                      synchronousInputId="Package\Extract Data\Customer Loyalty History\OLE DB Destination.Inputs[OLE DB Destination Input]">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Extract Data\Customer Loyalty History\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\Extract Data\Customer Loyalty History\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\Extract Data\Customer Loyalty History\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\Extract Data\Customer Loyalty History\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+              </components>
+              <paths>
+                <path
+                  refId="Package\Extract Data\Customer Loyalty History.Paths[Flat File Source Output]"
+                  endId="Package\Extract Data\Customer Loyalty History\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                  name="Flat File Source Output"
+                  startId="Package\Extract Data\Customer Loyalty History\Flat File Source.Outputs[Flat File Source Output]" />
+              </paths>
+            </pipeline>
+          </DTS:ObjectData>
+        </DTS:Executable>
+      </DTS:Executables>
+      <DTS:PrecedenceConstraints>
+        <DTS:PrecedenceConstraint
+          DTS:refId="Package\Extract Data.PrecedenceConstraints[Constraint]"
+          DTS:CreationName=""
+          DTS:DTSID="{D9273574-8F8D-4B0F-B7B6-76503FF65A12}"
+          DTS:From="Package\Extract Data\Customer Flights Activity"
+          DTS:LogicalAnd="True"
+          DTS:ObjectName="Constraint"
+          DTS:To="Package\Extract Data\Customer Loyalty History" />
+        <DTS:PrecedenceConstraint
+          DTS:refId="Package\Extract Data.PrecedenceConstraints[Constraint 1]"
+          DTS:CreationName=""
+          DTS:DTSID="{39C750FE-088B-4DE3-8E6D-B739D2182638}"
+          DTS:From="Package\Extract Data\Customer Loyalty History"
+          DTS:LogicalAnd="True"
+          DTS:ObjectName="Constraint 1"
+          DTS:To="Package\Extract Data\Calendar" />
+      </DTS:PrecedenceConstraints>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:PrecedenceConstraints>
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint]"
+      DTS:CreationName=""
+      DTS:DTSID="{9AD190DD-26EE-4B1E-A9D5-A1F80B63AE1F}"
+      DTS:From="Package\Execute SQL Task"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint"
+      DTS:To="Package\Extract Data" />
+  </DTS:PrecedenceConstraints>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="162.4,41.6"
+          Id="Package\Execute SQL Task"
+          TopLeft="35.7142857903121,110.882352843984" />
+        <NodeLayout
+          Size="120,41.6"
+          Id="Package\Extract Data\Calendar"
+          TopLeft="40.285714890884,161.447058577531" />
+        <NodeLayout
+          Size="194.4,41.6"
+          Id="Package\Extract Data\Customer Flights Activity"
+          TopLeft="33.4285722831076,5.5" />
+        <NodeLayout
+          Size="196,41.6"
+          Id="Package\Extract Data\Customer Loyalty History"
+          TopLeft="60.2857149334588,75.7999998290749" />
+        <EdgeLayout
+          Id="Package\Extract Data.PrecedenceConstraints[Constraint]"
+          TopLeft="130.628572283108,47.1">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="27.6571426503512,28.6999998290749"
+              Start="0,0"
+              End="27.6571426503512,21.1999998290749">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,10.3499999145375" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,10.3499999145375"
+                    Point2="0,14.3499999145375"
+                    Point3="4,14.3499999145375" />
+                  <mssgle:LineSegment
+                    End="23.6571426503512,14.3499999145375" />
+                  <mssgle:CubicBezierSegment
+                    Point1="23.6571426503512,14.3499999145375"
+                    Point2="27.6571426503512,14.3499999145375"
+                    Point3="27.6571426503512,18.3499999145375" />
+                  <mssgle:LineSegment
+                    End="27.6571426503512,21.1999998290749" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Extract Data.PrecedenceConstraints[Constraint 1]"
+          TopLeft="158.285714933459,117.399999829075">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-58.0000000425748,44.0470587484565"
+              Start="0,0"
+              End="-58.0000000425748,36.5470587484565">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,18.0235293742282" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,18.0235293742282"
+                    Point2="0,22.0235293742282"
+                    Point3="-4,22.0235293742282" />
+                  <mssgle:LineSegment
+                    End="-54.0000000425748,22.0235293742282" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-54.0000000425748,22.0235293742282"
+                    Point2="-58.0000000425748,22.0235293742282"
+                    Point3="-58.0000000425748,26.0235293742282" />
+                  <mssgle:LineSegment
+                    End="-58.0000000425748,36.5470587484565" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <ContainerLayout
+          HeaderHeight="43"
+          IsExpanded="True"
+          PanelSize="287.2,258.4"
+          Size="287.2,301.6"
+          Id="Package\Extract Data"
+          TopLeft="235.000000500253,57.3529411261985" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint]"
+          TopLeft="198.114285790312,131.682352843984">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="36.8857147099413,76.4705882822147"
+              Start="0,0"
+              End="29.3857147099413,76.4705882822147">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="14.4428573549706,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="14.4428573549706,0"
+                    Point2="18.4428573549706,0"
+                    Point3="18.4428573549706,4" />
+                  <mssgle:LineSegment
+                    End="18.4428573549706,72.4705882822147" />
+                  <mssgle:CubicBezierSegment
+                    Point1="18.4428573549706,72.4705882822147"
+                    Point2="18.4428573549706,76.4705882822147"
+                    Point3="22.4428573549706,76.4705882822147" />
+                  <mssgle:LineSegment
+                    End="29.3857147099413,76.4705882822147" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\Extract Data\Calendar">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="170.4,41.6"
+          Id="Package\Extract Data\Calendar\OLE DB Destination"
+          TopLeft="517.999992281199,253.999996215105" />
+        <NodeLayout
+          Size="150.4,41.6"
+          Id="Package\Extract Data\Calendar\Flat File Source"
+          TopLeft="457.999993175268,128.99999807775" />
+        <EdgeLayout
+          Id="Package\Extract Data\Calendar.Paths[Flat File Source Output]"
+          TopLeft="533.199993175268,170.59999807775">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="69.9999991059303,83.3999981373549"
+              Start="0,0"
+              End="69.9999991059303,75.8999981373549">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,37.6999990686774" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,37.6999990686774"
+                    Point2="0,41.6999990686774"
+                    Point3="4,41.6999990686774" />
+                  <mssgle:LineSegment
+                    End="65.9999991059303,41.6999990686774" />
+                  <mssgle:CubicBezierSegment
+                    Point1="65.9999991059303,41.6999990686774"
+                    Point2="69.9999991059303,41.6999990686774"
+                    Point3="69.9999991059303,45.6999990686774" />
+                  <mssgle:LineSegment
+                    End="69.9999991059303,75.8999981373549" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Extract Data\Calendar\OLE DB Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <TaskHost
+    design-time-name="Package\Extract Data\Customer Flights Activity">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="150.4,41.6"
+          Id="Package\Extract Data\Customer Flights Activity\Flat File Source"
+          TopLeft="280.714286311853,51.2352940727373" />
+        <NodeLayout
+          Size="170.4,41.6"
+          Id="Package\Extract Data\Customer Flights Activity\OLE DB Destination"
+          TopLeft="305.000000649265,167.4705880885" />
+        <EdgeLayout
+          Id="Package\Extract Data\Customer Flights Activity.Paths[Flat File Source Output]"
+          TopLeft="355.914286311853,92.8352940727373">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="34.2857143374123,74.6352940157624"
+              Start="0,0"
+              End="34.2857143374123,67.1352940157624">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,33.3176470078812" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,33.3176470078812"
+                    Point2="0,37.3176470078812"
+                    Point3="4,37.3176470078812" />
+                  <mssgle:LineSegment
+                    End="30.2857143374123,37.3176470078812" />
+                  <mssgle:CubicBezierSegment
+                    Point1="30.2857143374123,37.3176470078812"
+                    Point2="34.2857143374123,37.3176470078812"
+                    Point3="34.2857143374123,41.3176470078812" />
+                  <mssgle:LineSegment
+                    End="34.2857143374123,67.1352940157624" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Extract Data\Customer Flights Activity\OLE DB Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <TaskHost
+    design-time-name="Package\Extract Data\Customer Loyalty History">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="150.4,41.6"
+          Id="Package\Extract Data\Customer Loyalty History\Flat File Source"
+          TopLeft="448.999993309379,72.9999989122152" />
+        <NodeLayout
+          Size="170.4,41.6"
+          Id="Package\Extract Data\Customer Loyalty History\OLE DB Destination"
+          TopLeft="474.999992921949,218.999996736646" />
+        <EdgeLayout
+          Id="Package\Extract Data\Customer Loyalty History.Paths[Flat File Source Output]"
+          TopLeft="524.199993309379,114.599998912215">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="35.9999996125699,104.39999782443"
+              Start="0,0"
+              End="35.9999996125699,96.8999978244304">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,48.1999989122152" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,48.1999989122152"
+                    Point2="0,52.1999989122152"
+                    Point3="4,52.1999989122152" />
+                  <mssgle:LineSegment
+                    End="31.9999996125699,52.1999989122152" />
+                  <mssgle:CubicBezierSegment
+                    Point1="31.9999996125699,52.1999989122152"
+                    Point2="35.9999996125699,52.1999989122152"
+                    Point3="35.9999996125699,56.1999989122152" />
+                  <mssgle:LineSegment
+                    End="35.9999996125699,96.8999978244304" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Extract Data\Customer Loyalty History\OLE DB Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>
